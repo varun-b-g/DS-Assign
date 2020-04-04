@@ -1,0 +1,151 @@
+import pandas as pd 
+import os
+assump={'O+':[1,1,1],'O-':[1,1,1],'AB':[1,1,1],'A':[2,2,1],'B':[3,1,1]}
+assump=pd.DataFrame(assump,index=['branch1','branch2','branch3'])
+print(assump)
+b1={'O+':['Mahesh','',''],'O-':['Manju','',''],'AB':['Shreyas','',''],'A':['Ankush','Samartha',''],'B':['Ravi','Sasi','Sushma']}
+b1=pd.DataFrame(b1,index=['1','2','3'])
+b2={'O+':['Nikiram','',''],'O-':['Bhargav','',''],'AB':['Hemanth','',''],'A':['Sourab','Rahul',''],'B':['Varun','','']}
+b2=pd.DataFrame(b2,index=['1','2','3'])
+b3={'O+':['Saketh','',''],'O-':['Chaitanya','',''],'AB':['Ananya','',''],'A':['Aviansh','',''],'B':['Gnaneshwar','','']}
+b3=pd.DataFrame(b3,index=['1','2','3'])
+b1c={'Mahesh':9999999901,'Manju':9999999902,'Shreyas':9999999903,'Ankush':9999999904,'Samartha':9999999905,'Ravi':9999999906,'Sasi':9999999907,'Sushma':9999999908}
+b2c={'Nikiram':9999999909,'Bhargav':9999999910,'Hemanth':9999999911,'Sourab':9999999912,'Rahul':9999999913,'Varun':9999999914}
+b3c={'Saketh':9999999915,'Chaitanya':9999999916,'Ananya':9999999917,'Aviansh':9999999918,'Gnaneshwar':9999999919}
+print('from which branch you require blood')
+a=int(input())
+print(' which blood type')
+b=str(input())
+if(a==1):
+    if(b=='O+'):
+        print('this are the availabe donors')
+        print(b1['O+'])
+        print('select the donor')
+        c=str(input())
+        if(c=='Mahesh'):
+             print('contact number is')           
+             print(b1c['Mahesh'])               
+if(a==1):
+    if(b=='O-'):
+        print('this are the availabe donors')
+        print(b1['O-'])
+        print('select the donor')
+        c=str(input())
+        if(c=='Manju'):
+             print('contact number is')           
+             print(b1c['Manju']) 
+if(a==1):
+    if(b=='AB'):
+        print('this are the availabe donors')
+        print(b1['AB'])
+        print('select the donor')
+        c=str(input())
+        if(c=='Shreyas'):
+             print('contact number is')           
+             print(b1c['Shreyas'])
+if(a==1):
+    if(b=='A'):
+        print('this are the availabe donors')
+        print(b1['A'])
+        print('select the donor')
+        c=str(input())
+        if(c=='Ankush'):
+             print('contact number is')           
+             print(b1c['Ankush'])
+        if(c=='Samartha'):
+             print('contact number is')           
+             print(b1c['Samartha'])     
+if(a==1):
+    if(b=='B'):
+        print('this are the availabe donors')
+        print(b1['B'])
+        print('select the donor')
+        c=str(input())
+        if(c=='Ravi'):
+             print('contact number is')           
+             print(b1c['Ravi'])
+        if(c=='Sasi'):
+             print('contact number is')           
+             print(b1c['Sasi'])
+        if(c=='Sushma'):
+             print('contact number is')           
+             print(b1c['Sushma'])                             
+if(a==2):
+    if(b=='O+'):
+        print('this are the availabe donors')
+        print(b2['O+'])
+        print('select the donor')
+        c=str(input())
+        if(c=='Nikiram'):
+             print('contact number is')           
+             print(b2c['Nikiram'])
+if(a==2):
+    if(b=='O-'):
+        print('this are the availabe donors')
+        print(b2['O-'])
+        print('select the donor')
+        c=str(input())
+        if(c=='Bhargav'):
+             print('contact number is')           
+             print(b2c['Bhargav'])
+        
+if(a==2):
+    if(b=='AB'):
+        print('this are the availabe donors')
+        print(b2['AB'])
+        if(c=='Hemanth'):
+             print('contact number is')           
+             print(b2c['Hemanth'])
+if(a==2):
+    if(b=='A'):
+        print('this are the availabe donors')
+        print(b2['A'])
+        if(c=='Sourab'):
+             print('contact number is')           
+             print(b2c['Sourab'])
+        if(c=='Rahul'):
+             print('contact number is')           
+             print(b2c['Rahul'])
+                 
+if(a==2):
+    if(b=='B'):
+        print('this are the availabe donors')
+        print(b2['B'])
+        if(c=='Varun'):
+             print('contact number is')           
+             print(b2c['Varun'])                        
+if(a==3):
+    if(b=='O+'):
+        print('this are the availabe donors')
+        print(b3['O+'])
+        if(c=='Saketh'):
+             print('contact number is')           
+             print(b3c['Saketh'])
+if(a==3):
+    if(b=='O-'):
+        print('this are the availabe donors')
+        print(b3['O-'])
+        if(c=='Chaitanya'):
+             print('contact number is')           
+             print(b3c['Chaitanya'])
+if(a==3):
+    if(b=='AB'):
+        print('this are the availabe donors')
+        print(b3['AB'])
+        if(c=='Ananya'):
+             print('contact number is')           
+             print(b3c['Ananya'])
+if(a==3):
+    if(b=='A'):
+        print('this are the availabe donors')
+        print(b3['A'])
+        if(c=='Aviansh'):
+             print('contact number is')           
+             print(b3c['Aviansh'])
+if(a==3):
+    if(b=='B'):
+        print('this are the availabe donors')
+        print(b3['B'])
+        if(c=='Gnaneshwar'):
+             print('contact number is')           
+             print(b3c['Gnaneshwar'])                        
